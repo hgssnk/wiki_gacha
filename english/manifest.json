@@ -1,0 +1,22 @@
+{
+  "name": "wikiガチャ(English)",
+  "description": "英語のwikiページで、Enterキーを押すと、記事をガチャるよ。",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+  "tabs","activeTab"
+  ],
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://en.wikipedia.org/wiki/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
